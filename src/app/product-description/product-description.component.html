@@ -1,0 +1,4 @@
+<span *ngFor="let item of productDesc; let i = index;" style="color:blue;">
+    <span>{{item}}&nbsp;</span>
+    <span>{{ (i < productDesc.length-1) ? '>' : ' ' }}&nbsp;</span>
+</span>

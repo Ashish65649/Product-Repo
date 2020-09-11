@@ -1,0 +1,3 @@
+<div class="container" *ngFor="let product of productList">
+  <app-product-row [product]="product" (clickProduct)="clicked($event)" [ngStyle]="Func(product) ? obj : ''" ></app-product-row>
+</div>
